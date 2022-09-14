@@ -1,0 +1,9 @@
+---
+- name: Install OpenCV core
+  ansible.builtin.dnf:
+    name:
+      - opencv
+      - opencv-contrib
+      - opencv-doc
+    state: latest
+  become: true

@@ -1,0 +1,9 @@
+---
+---
+- name: Install NumPy
+  ansible.builtin.dnf:
+    name:
+      - python3-matplotlib
+      - python3-numpy
+    state: latest
+  become: true

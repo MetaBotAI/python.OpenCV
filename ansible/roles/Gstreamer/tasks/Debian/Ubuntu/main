@@ -1,0 +1,11 @@
+---
+# https://www.tomordonez.com/install-opencv-linux/
+
+- name: Install Gstreamer for OpenCV
+  ansible.builtin.apt:
+    pkg:
+      - libgstreamer1.0-dev
+      - gstreamer1.0-plugins-base
+
+    state: latest
+  become: true

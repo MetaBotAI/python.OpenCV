@@ -1,0 +1,7 @@
+---
+- name: Install NumPy
+  ansible.builtin.apt:
+    pkg:
+    - python3-matplotlib
+    - python3-numpy
+  become: true

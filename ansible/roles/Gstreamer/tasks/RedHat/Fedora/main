@@ -1,0 +1,19 @@
+---
+# https://www.tomordonez.com/install-opencv-linux/
+
+- name: Install Gstreamer for OpenCV
+  ansible.builtin.dnf:
+    name:
+      - gstreamer1-plugins-base-devel
+    state: latest
+  become: true
+
+# works: https://docs.fedoraproject.org/en-US/quick-docs/assembly_installing-plugins-for-playing-movies-and-music/
+- name: Install plugins for video
+  ansible.builtin.dnf:
+    name:
+      - gstreamer1-plugins-{bad-\*,good-\*,base}
+      - gstreamer1-plugin-openh264
+      - gstreamer1-libav
+    state: latest
+  become: true
