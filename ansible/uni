@@ -1,5 +1,5 @@
 ---
-- hosts: local
+- hosts: node
 
   roles:
   - python.OpenCV
