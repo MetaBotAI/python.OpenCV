@@ -5,6 +5,4 @@ def readImage():
     cv.imshow('cat', img)
     cv.waitKey(0)
 
-readImage
-
-cv.waitKey(0)
+readImage()
