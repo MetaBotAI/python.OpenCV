@@ -8,7 +8,7 @@ ansible_user=me
 ansible_become_password=u
 
 [test]
-192.168.122.9
+192.168.122.164
 
 [test:vars]
 ansible_python_interpreter=/usr/bin/python3

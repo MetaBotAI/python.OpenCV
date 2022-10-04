@@ -1,7 +1,7 @@
 ---
 - hosts: local
-  gather_facts: yes
 
   roles:
-  - role: python.OpenCV
-  - role: NumPy
+  - python.OpenCV
+  - NumPy
+  - .test

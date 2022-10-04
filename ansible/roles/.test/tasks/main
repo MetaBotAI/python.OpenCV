@@ -1,0 +1,11 @@
+---
+- name: copy Tests
+  ansible.builtin.copy:
+    src: "{{item}}"
+    dest: /tmp/
+    owner: "{{ansible_user}}"
+    group: "{{ansible_user}}"
+    mode: '0744'
+  with_items:
+  - playVideo.py
+  - viewImage.py
