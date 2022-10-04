@@ -1,2 +1,2 @@
 cd /tmp
-python3 ./viewImage.py
+python3 viewImage.py
